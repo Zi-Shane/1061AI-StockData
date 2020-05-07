@@ -33,7 +33,7 @@ while d_year <= latest_year:
                     + '01&stockNo=' + d_stock)  
         file_name = 'stock-' + d_stock + '-' + str_year + '-' + str_month + '.csv'
 
-        time.sleep(3)
+        time.sleep(10)
         try:
             print('Downloading ' + 'stock-' + d_stock + '-' + str_year + '-' + str_month)
             urlretrieve(url, file_name)
